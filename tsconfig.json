@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "WebWorker"],
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    
+
+    /* NODE ÇAKIŞMASINI ÖNLEMEK İÇİN */
+    "types": ["vite/client"],
+
+    /* Type-only import uyarılarını Vite ile uyumlu yapar */
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
