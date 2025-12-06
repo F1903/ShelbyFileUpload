@@ -15,7 +15,6 @@ function App() {
       </div>
       <UploadPage>
       </UploadPage>
-      <WalletConnection></WalletConnection>
     </AppProviders>
   );
 }
