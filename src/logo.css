@@ -1,0 +1,27 @@
+.corner-logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+
+.camel-gif {
+  width: 60px;
+  height: auto;
+}
+
+.loper-text {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  animation: fadeBlink 2s ease-in-out infinite;
+}
+
+@keyframes fadeBlink {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
