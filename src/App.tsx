@@ -5,7 +5,8 @@ import "./App.css";
 import { WalletConnection } from "./components/WalletConnection";
 import "./App.css";
 import "./logo.css"; // <-- ekledik
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
         <img src="/camel.gif" alt="camel" className="camel-gif" />
         <span className="loper-text">loper</span>
       </div>
-      <SpeedInsights></SpeedInsights>
       <UploadPage>
       </UploadPage>
+      <Analytics></Analytics>
+      <SpeedInsights></SpeedInsights>
     </AppProviders>
   );
 }

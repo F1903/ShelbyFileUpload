@@ -22,7 +22,6 @@ export function AppProviders({ children }: PropsWithChildren) {
 >
   {children}
 </AptosWalletAdapterProvider>
-
     </QueryClientProvider>
   );
 }
